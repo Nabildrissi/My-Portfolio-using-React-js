@@ -1,0 +1,81 @@
+/* Header Container */
+.header_logo {
+    display: flex;
+    justify-content: space-between; /* Distribute items between the left and right */
+   
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+ 
+}
+
+/* Header Content */
+.header__content__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Name Styling */
+.header__name__logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* First and Last name colors */
+.header__name--first {
+    color: #ff4081; /* First name color */
+}
+
+.header__name--last {
+    color: #ffffff; /* Last name color */
+}
+
+/* Button Styling */
+.header__button {
+    background: linear-gradient(135deg, var(--color-bg-variant), #ff80ab);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.header__button:hover {
+    background: linear-gradient(135deg, #ff80ab, #ff4081);
+}
+/* Transparent Button Styling */
+.header__button.transparent {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7); /* Slightly faded text color */
+    border: 1px solid rgba(255, 255, 255, 0.7); /* Optional: Add a border to keep button shape */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Keep other styles as is */
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__name {
+        margin-bottom: 1rem;
+    }
+
+    .header__button {
+        margin-top: 1rem;
+    }
+}
